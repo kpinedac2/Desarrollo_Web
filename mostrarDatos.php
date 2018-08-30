@@ -1,3 +1,17 @@
+	
+	
+	<?php
+
+
+    require("conexion.php");
+
+    if (mysqli_connect_errno())
+      {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+      }
+    
+
+?>
 	<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
@@ -37,8 +51,7 @@
 			  		<div class="row align-items-center">
 			  			<div class="col-lg-6 col-sm-6 col-6 header-top-left">
 			  				<ul>
-			  					<li><a href="#">Visit Us</a></li>
-			  					<li><a href="#">Buy Tickets</a></li>
+			  			
 			  				</ul>			
 			  			</div>
 			  			<div class="col-lg-6 col-sm-6 col-6 header-top-right">
@@ -55,14 +68,13 @@
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.php"><img src="img/logo.png" alt="" title="" /></a>
+				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li><a href="index.php">Home</a></li>
-				  
-				        				          					          		          
-						  <li><a href="contact.php">Contacto</a></li>
+				              					          		          
+				          <li><a href="contact.php">Contact</a></li>
 						  <li><a href="mostrarDatos.php">Ver Mensajes</a></li>
 						  <li><a href="mostrarDatosPeronal.php">Ver Inf. Personal</a></li>
 						  <li><a href="mostrarDatosEmpresa.php">Ver Inf. Empresa</a></li>
@@ -71,62 +83,71 @@
 					</div>
 				</div>
 			</header><!-- #header -->
-			
+		  
 			<!-- start banner Area -->
-			<section class="banner-area relative">
-				<div class="overlay overlay-bg"></div>				
-				<div class="container">
-					<div class="row fullscreen align-items-center justify-content-between">
-						<div class="col-lg-6 col-md-6 banner-left">
-							<h6 class="text-white">Buscanos!</h6>
-							<h1 class="text-white">Todo sobre Desarrollo Web</h1>
-							<p class="text-white">
-							Buscanos te brindaremos el mejor servicio sobre App Web
-							</p>
-							<a href="contact.php" class="primary-btn text-uppercase">Contactanos</a>
-						</div>
-						<div class="col-lg-4 col-md-6 banner-right">
-							<ul class="nav nav-tabs" id="myTab" role="tablist">
-							  <li class="nav-item">
-							    <a class="nav-link active" id="flight-tab" data-toggle="tab" href="#flight" role="tab" aria-controls="flight" aria-selected="true">Inf. Personal</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="false">Inf. Empresarial</a>
-							  </li>
+			<section class="relative about-banner">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								VISTA DE LOS MENSAJES				
+							</h1>	
 							
-							<div class="tab-content" id="myTabContent">
-							  <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
-							  <form action="insertDB/i_infPersonal.php" method="POST" class="form-wrap">
-							
-						
-									<input type="text" class="form-control" name="nombreCompleto" id="nombreCompleto" placeholder="Nombre Completo " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre Completo '">									
-									<input type="text" class="form-control" name="direccion" id="direccion" placeholder="Direccion " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Direccion '">
-									<input type="text" class="form-control date-picker" name="Fecha_Registro" id="Fecha_Registro" placeholder="Fecha de Registro " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fecha de Registro '">
-									<input type="text" class="form-control" name="telefono" id="telefono" placeholder="Telefono " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefono '">
-									<input type="text" class="form-control" name="correo" id="correo" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email '">		
-									<button type="submit" class="btn btn-success">Enviar Informacion</button>									
-								</form>
-							  </div>
-							  <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
-
-							  <form action="insertDB/i_infEmpresa.php" method="POST" class="form-wrap">
-								<input type="text" class="form-control" name="nombreEmpresa" id="nombreEmpresa" placeholder="Nombre Empresa " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre Completo '">									
-									<input type="text" class="form-control" name="direccion_Empresa" id="direccion_Empresa" placeholder="Direccion Empresa " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Direccion Empresa '">
-									<input type="text" class="form-control date-picker" name="Fecha_Fundacion" id="Fecha_Fundacion" placeholder="Fecha Fundacion Empresa " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fecha Fundacion Empresa'">
-									<input type="text" class="form-control" name="telefono_Empresa" placeholder="Telefono Empresa " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefono Empresa '">
-									<input type="text" class="form-control" name="correo_Empresa" placeholder="Email Empresa" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Empresa '">		
-									
-									<button type="submit" class="btn btn-success">Enviar Informacion</button>									
-								</form>							  	
-							  </div>
-							  
+						</div>	
+					</div>
+				</div>
 			</section>
-			<!-- End banner Area -->
+			<!-- End banner Area -->					  
+			
+		
+		
+			
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
 
+					<div class="row">
+						<div class="col-lg-3  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+
+<div style="text-align:center;">
+<table border="128"  style="center" >
+		<tr>
+			<td>ID</td>
+			<td>NOMBRE</td>
+			<td>EMAIL</td>
+			<td>TEMA</td>
+			<td>MENSAJE</td>	
+		</tr>
+		<?php 
+	$success = 'ALright';
+	$result = mysqli_query($conexion,"SELECT * FROM tb_msj");  
+	$row = mysqli_fetch_row($result);
+
+	while ($row = mysqli_fetch_row($result)){  
+		 ?>
+
+		<tr>
+	
+			<td><?php echo $row[0] ?></td>
+			<td><?php echo $row[1] ?></td>
+			<td><?php echo $row[2] ?></td>
+			<td><?php echo $row[3] ?></td>
+			<td><?php echo $row[4] ?></td>
+
+	<?php 
+	}
+	 ?>
+	</table>
+    
+                      </select>
+					  </div>
+                    </div>
+		
+		
 		
 
-			
-	
 					<div class="row footer-bottom d-flex justify-content-between align-items-center">
 						<p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>

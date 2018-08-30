@@ -62,6 +62,9 @@
 				          <li><a href="index.php">Home</a></li>
 								          					          		          
 				          <li><a href="contact.php">Contacto</a></li>
+						  <li><a href="mostrarDatos.php">Ver Mensajes</a></li>
+						  <li><a href="mostrarDatosPeronal.php">Ver Inf. Personal</a></li>
+						  <li><a href="mostrarDatosEmpresa.php">Ver Inf. Empresa</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
 					</div>
@@ -131,7 +134,7 @@
 									
 										<input name="email" id="email" placeholder="Escribe tu Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
 
-										<input name="tema" id="tema" placeholder="Escribe tu Tema" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control" required="" type="text">
+										<input name="tema" id="tema" placeholder="Escribe tu Tema" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Escribe tu Tema'" class="common-input mb-20 form-control" required="" type="text">
 									</div>
 									<div class="col-lg-6 form-group">
 										<textarea class="common-textarea form-control" name="mensaje" id="mensaje" placeholder="Escribe tu Mensaje" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'" required=""></textarea>				
