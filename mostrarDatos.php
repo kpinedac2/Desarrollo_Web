@@ -75,7 +75,7 @@
 				          <li><a href="index.php">Home</a></li>
 				              					          		          
 				          <li><a href="contact.php">Contact</a></li>
-						  <li><a href="mostrarDatos.php">Ver Mensajes</a></li>
+						  <li><a href="../mostrandoInfo/mostrarDatos.php">Ver Mensajes</a></li>
 						  <li><a href="mostrarDatosPeronal.php">Ver Inf. Personal</a></li>
 						  <li><a href="mostrarDatosEmpresa.php">Ver Inf. Empresa</a></li>
 				        </ul>
@@ -112,7 +112,8 @@
 							<div class="single-footer-widget">
 
 <div style="text-align:center;">
-<table border="128"  style="center" >
+<table class="table table-center" >
+<table  border="56"  cellpadding="15" style="center" >
 		<tr>
 			<td>ID</td>
 			<td>NOMBRE</td>
@@ -144,24 +145,9 @@
                       </select>
 					  </div>
                     </div>
-		
-		
-		
-
-					<div class="row footer-bottom d-flex justify-content-between align-items-center">
-						<p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-						<div class="col-lg-4 col-sm-12 footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
 					</div>
-				</div>
-			</footer>
-			<!-- End footer Area -->	
+		
+	
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="js/popper.min.js"></script>
