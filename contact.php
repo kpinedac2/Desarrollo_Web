@@ -62,10 +62,9 @@
 				          <li><a href="index.php">Home</a></li>
 								          					          		          
 				          <li><a href="contact.php">Contacto</a></li>
-						  <li><a href="mostrarDatos.php">Ver Mensajes</a></li>
-						  <li><a href="mostrarDatosPeronal.php">Ver Inf. Personal</a></li>
+						  <li><a href="mostrarDatos.php">Ver Inf. Contact</a></li>
+						  <li><a href="mostrarDatosPersonal.php">Ver Inf. Personal</a></li>
 						  <li><a href="mostrarDatosEmpresa.php">Ver Inf. Empresa</a></li>
-				        </ul>
 				      </nav><!-- #nav-menu-container -->					      		  
 					</div>
 				</div>

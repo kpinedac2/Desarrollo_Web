@@ -91,7 +91,7 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								VISTA DE LOS MENSAJES				
+								VISTA DATOS PERSONALES				
 							</h1>	
 							
 						</div>	
@@ -116,14 +116,15 @@
 <table  border="56"  cellpadding="15" style="center" >
 		<tr>
 			<td>ID</td>
-			<td>NOMBRE</td>
-			<td>EMAIL</td>
-			<td>TEMA</td>
-			<td>MENSAJE</td>	
+			<td>NOMBRE COMPLETO</td>
+			<td>DIRECCION</td>
+			<td>FECHA DE REGISTRO</td>
+			<td>TELEFONO</td>
+			<td>EMAIL</td>	
 		</tr>
 		<?php 
 	$success = 'ALright';
-	$result = mysqli_query($conexion,"SELECT * FROM tb_msj");  
+	$result = mysqli_query($conexion,"SELECT * FROM tb_personal");  
 	$row = mysqli_fetch_row($result);
 
 	while ($row = mysqli_fetch_row($result)){  
@@ -136,6 +137,7 @@
 			<td><?php echo $row[2] ?></td>
 			<td><?php echo $row[3] ?></td>
 			<td><?php echo $row[4] ?></td>
+			<td><?php echo $row[5] ?></td>
 
 	<?php 
 	}
